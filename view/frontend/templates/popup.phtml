@@ -1,0 +1,12 @@
+<?php
+/**@var $block \Sunarc\HomepagePopup\Block\Popup * */
+$status = $block->getPopupStatus();
+$blockContent = $block->getCmsBlockContent();
+
+if ($status): ?>
+    <div id="popup-modal" data-mage-init='{"myjs": {}}'>
+        <div class="modal-body-content">
+            <?php echo $blockContent; ?>
+        </div>
+    </div>
+<?php endif; ?>
